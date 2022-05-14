@@ -11,5 +11,5 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = [var.AWS_ACCOUNT_ID] # Canonical
+  owners = ["099720109477"] # Canonical
 }
