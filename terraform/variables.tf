@@ -12,9 +12,9 @@ variable "secret-key" {
 }
 */
 
-#variable "AWS_ACCOUNT_ID" {
-#  type = string
-#}
+variable "AWS_ACCOUNT_ID" {
+  type = string
+}
 
 variable "AWS_REGION" {
   type    = string

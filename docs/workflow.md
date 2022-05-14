@@ -1,6 +1,7 @@
 # Workflow
 
 We'll need access to AWS for this demo:
+- AWS_ACCOUNT_ID
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
 
@@ -9,11 +10,11 @@ We'll need access to AWS for this demo:
 Terraform Cloud portal:
 - Create Terraform Cloud `workspace` (and if necessary first create an `organisation`)
   - New Workspace > API-driven workflow, where we'll name our workspace `github-actions-demo`.
-- Add environment variables
+- Add environment variables (where Terraform cloud handles the necessary `TF_` prefix)
   - `variables` > Environment variables > Add variable:
+    - `AWS_ACCOUNT_ID` = ???
     - `AWS_ACCESS_KEY_ID` = ???
     - `AWS_SECRET_ACCESS_KEY` = ???
-    - `TF_ACCOUNT_ID` = <used without prefixed within terraform>
 - Create an API token (save it somewhere)
   - User Settings > Tokens > Create an API token, where we'll name ours `github-actions-demo-token` (save the token somewhere).
 
