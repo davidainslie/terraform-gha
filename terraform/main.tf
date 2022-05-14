@@ -10,7 +10,7 @@ terraform login <--- redirected to browser to generate token (if you don't have 
 Also, make sure to have a cloud workspace set up
 
 In the configs (upon not using local state anymore) we need to add the following AWS credentials environment variables:
-AWS_ACCESS_KEY
+AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 
 terraform apply

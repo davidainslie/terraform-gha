@@ -48,7 +48,8 @@ jobs:
         # This plan will run on Terraform Cloud, since we have configured this as the `backend` (see providers.tf)
         # Only runs on PR - once PR is merged, then the Plan will be applied
 
-      - uses: actions/github-script@v6
+      - name: Write Terraform Script
+        uses: actions/github-script@v6
         if: github.event_name == 'pull_request'
         env:
           PLAN: "terraform\n${{steps.plan.outputs.stdout}}"

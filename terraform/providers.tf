@@ -23,8 +23,8 @@ terraform {
 provider "aws" {
   /*
   Not required as we are using cloud state (with Terraform Cloud) instead of local state
-  access_key  = var.access_key
-  secret_key  = var.secret_key
+  access_key  = var.aws-access-key-id
+  secret_key  = var.aws-secret-access-key
   */
-  region = var.AWS_REGION
+  region = var.aws-region
 }
